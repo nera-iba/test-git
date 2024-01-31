@@ -1,38 +1,96 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="da">
 <head>
-<title>Gør siden mere tilgængelig</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-   <header>
-    <nav>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-    </nav>
-   </header>
-   <main>
-    <h1>hej med dig</h1>
-    <article>
-        <h2></h2>
+    <header>
+        <!--navigation-->
+        <nav aria-label="language">
+            <a href="#">da</a>
+            <p>|</p>
+            <a href="#">en</a>
+        </nav>
+        <nav aria-label="main">
+            <img src="/img/logo-sort.png" alt="company logo">
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+
+    <header>
+        <!--Hero -man kan også bruge section-->
+        <img src="/img/banner-billede.jpg" alt="">
+        <div>
+            <h1>Communitybaseret læring og fællesskab</h1>
+            <p>Start din rejse mod et større netværk</p>
+         </div>
+    </header>
+
+    <!--Hovedindhold-->
+    <main>
         <section>
-            <h3></h3>
-            <article>
-                <h4></h4>
-                <section>
-                    <h5></h5>
-                    <article>
-                        <h6></h6>
-                        <section>
-                            <h7></h7>
-                        </section>
-                    </article>
-                </section>
-            </article>
+        <h2>Bliv en del af fællesskabet!</h2>
+        <div>
+            <p>
+                Vores fokus er at bringe mennesker sammen og skabe et
+                netværk af ligesindede, som kan dele deres erfaringer og
+                støtte hinanden på forskellige måder. Som medlem af vores
+                fællesskab vil du have adgang til en række fordele, herunder
+                eksklusive tilbud, rabatter, og særlige arrangementer.</p>
+            
+            <p>
+                Derudover kan du opbygge et tæt netværk med andre
+                medlemmer og få mulighed for at udveksle ideer og lære af
+                andres erfaringer.</p>
+
+            <p>
+                Uanset om du er på udkig efter professionel støtte, personlig
+                udvikling eller bare ønsker at møde nye mennesker, vil vores
+                fællesskab give dig muligheden for at opbygge meningsfulde
+                relationer og have det sjovt undervejs.
+            </p>
+        </div>
+        <form>
+            <label for="navn">Navn</label>
+            <input id="navn" type="text" placeholder="Navn">
+
+            <label for="brugernavn">Brugernavn</label> 
+            <input id="brugernavn" type="text" placeholder="Brugernavn">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email">
+
+            <input type="submit" value="Submit" name="Submit">
+        </form>
+    </section>
+    <section>
+        <h2>Sammen kan vi skabe fantastiske ting</h2>
+        <p>
+            Ved at være en del af vores kreative fællesskab og netværk vil du opdage en verden af muligheder for at udtrykke dig selv og skabe noget fantastisk.</p>
+        <p>
+            Vores fællesskab er fyldt med talentfulde og passionerede mennesker, som brænder for at skabe kunst, musik, design og meget mere. Som medlem vil du have adgang til en bred vifte af ressourcer og støtte, der kan hjælpe dig med at udvikle dine kreative færdigheder og tage dine projekter til nye højder.</p>
+        <p>
+            Vores netværk er også en fantastisk mulighed for at møde andre kreative mennesker, som deler din lidenskab og kan inspirere dig til at udforske nye ideer og kreative udfoldelser. Bliv en del af vores fællesskab og oplev, hvordan sammen kan vi skabe noget virkelig fantastisk!</p>
+        
+        <a href="#"> Læs hvordan vi kan arbejde sammen</a>
+    </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <section>
+            <h3>Information</h3>
         </section>
-    </article>
-   </main>
+        <section>
+            <h3>SoMe</h3>
+        </section>
+        <section>
+            <h3>Søg</h3>
+        </section>
+    </footer>
 </body>
 </html>
