@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mockup</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,14 +19,14 @@
             <a href="#">en</a>
         </nav>
         <nav aria-label="main">
-            <img src="/img/logo-sort.png" alt="company logo">
-            <i class="fa-solid fa-bars"></i>
+            <img src="img/logo-sort.png" alt="company logo">
+            <i class="fa-solid fa-bars fa-2xl"></i>
         </nav>
     </header>
 
     <header>
         <!--Hero -man kan også bruge section-->
-        <img src="/img/banner-billede.jpg" alt="">
+        <img src="img/banner-billede.jpg" alt="">
         <div>
             <h1>Communitybaseret læring og fællesskab</h1>
             <p>Start din rejse mod et større netværk</p>
@@ -33,7 +36,7 @@
     <!--Hovedindhold-->
     <main>
         <section>
-        <h2>Bliv en del af fællesskabet!</h2>
+        <h2>Bliv en del af fællesskabet idag!</h2>
         <div>
             <p>
                 Vores fokus er at bringe mennesker sammen og skabe et
@@ -55,18 +58,20 @@
             </p>
         </div>
         <form>
-            <label for="navn">Navn</label>
+            <h3>Tilmeld dig her!</h3>
+            <label class="visually-hidden" for="navn">Navn</label>
             <input id="navn" type="text" placeholder="Navn">
 
-            <label for="brugernavn">Brugernavn</label> 
+            <label class="visually-hidden" for="brugernavn">Brugernavn</label> 
             <input id="brugernavn" type="text" placeholder="Brugernavn">
 
-            <label for="email">Email</label>
+            <label class="visually-hidden" for="email">Email</label>
             <input id="email" type="email" placeholder="Email">
 
-            <input type="submit" value="Submit" name="Submit">
+            <input type="submit" value="Tilmeld" name="submit">
         </form>
     </section>
+
     <section>
         <h2>Sammen kan vi skabe fantastiske ting</h2>
         <p>
@@ -76,7 +81,7 @@
         <p>
             Vores netværk er også en fantastisk mulighed for at møde andre kreative mennesker, som deler din lidenskab og kan inspirere dig til at udforske nye ideer og kreative udfoldelser. Bliv en del af vores fællesskab og oplev, hvordan sammen kan vi skabe noget virkelig fantastisk!</p>
         
-        <a href="#"> Læs hvordan vi kan arbejde sammen</a>
+        <a class="btn" href="#"> Læs hvordan vi kan arbejde sammen</a>
     </section>
     </main>
 
