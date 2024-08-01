@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*Generel styling*/
+/*
+#779882
+#425348
+#F3F4EF
+
+color tekst: #3C3C3C
+*/
+* { /*alt på siden bliver påvirket*/
+  box-sizing: border-box; /*Padding og border inkluderes i bredde og højde*/
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #3C3C3C;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*Navigation start*/
+header nav:nth-of-type(1) {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+  align-items: center;
+  background-color: #F3F4EF;
+}
+header nav:nth-of-type(1) a, header nav:nth-of-type(1) p {
+  color: #a3a3a3;
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+header nav:nth-of-type(1) a:hover {
+  text-decoration: underline;
+}
+
+header nav:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  background-color: #779882;
+}
+header nav:nth-of-type(2) img {
+  width: 50px;
+  height: auto;
+}
+
+/*Banner billede*/
+header:nth-of-type(2) {
+  background-color: #779882;
+}
+header:nth-of-type(2) img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 30%;
+     object-position: center 30%;
+}
+header:nth-of-type(2) div {
+  padding: 1em 0;
+}
+header:nth-of-type(2) div p, header:nth-of-type(2) div h1 {
+  color: #fff;
+  text-align: center;
+}
+header:nth-of-type(2) div p {
+  font-size: 30px;
+  font-weight: 300;
+}
+header:nth-of-type(2) div h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/*Hovedindhold*/
+main section p {
+  padding-bottom: 0.8em;
+}
+main section:nth-of-type(1) {
+  padding: 2em 1.5em;
+  background-color: #F3F4EF;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  gap: 0 5%;
+  align-items: center;
+}
+main section:nth-of-type(1) h2 {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+main section:nth-of-type(1) div {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+main section:nth-of-type(1) form {
+  background-color: #425348;
+  border-radius: 45px;
+  padding: 3em;
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+main section:nth-of-type(1) form h3 {
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+/*Form*/
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+::-moz-placeholder {
+  color: #3C3C3C;
+}
+
+::placeholder {
+  color: #3C3C3C;
+}
+
+input[type=submit] {
+  background-color: #779882;
+  color: #fff;
+  padding: 0.7em 1.4em;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+input[type=submit]:hover {
+  background-color: #425348;
+  border: 1px solid #fff;
+  transition: 0.4s ease-in-out;
+}
+
+/*Andre style elementer*/
+.visually-hidden { /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+main section:nth-of-type(2) {
+  padding: 2em 1.5em;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+  padding-bottom: 0.5em;
+}
+
+main section:nth-of-type(2) p {
+  padding-bottom: 0.5em;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #779882;
+  color: #fff;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  background-color: #425348;
+  transition: 0.4s ease-in-out;
+}
+
+/*Footer*/
+footer {
+  background-color: #425348;
+  display: flex;
+  padding: 1.5em;
+  height: 15vh;
+}
+
+footer section {
+  width: 33.3%;
+}
+
+footer h3 {
+  color: #fff;
+}
+
+/*Responsiv tilpasning*/
+@media only screen and (max-width: 850px) {
+  main section:nth-of-type(1) {
+    grid-template-rows: auto auto auto;
+  }
+  main section:nth-of-type(1) div {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+  main section:nth-of-type(1) form {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+  main section:nth-of-type(2) {
+    width: 100%;
+  }
+  .btn {
+    display: block;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer section {
+    padding-bottom: 1.5em;
+  }
+}/*# sourceMappingURL=style.css.map */
